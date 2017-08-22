@@ -30,11 +30,6 @@ class Scraper
       course.title = post.css("h2").text
       course.schedule = post.css("em").text
       course.description = post.css("p").text
-      puts "title: #{course.title}"
-      puts '########################################'
-      puts "schedule: #{course.schedule}"
-      puts '########################################'
-      puts "description: #{course.description}"
       course
     end
   end
